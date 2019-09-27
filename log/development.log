@@ -1280,3 +1280,112 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+Started GET "/" for 127.0.0.1 at 2019-09-27 00:49:06 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Started GET "/" for 127.0.0.1 at 2019-09-27 00:49:07 -0400
+Processing by SearchesController#search as HTML
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (37.3ms)
+  Rendered searches/search.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 4377ms (Views: 4308.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 4506ms (Views: 4436.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 00:49:24 -0400
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IbCm0ATjv48GJsnRrP+GCMyJ/KGb2Hcixy2NfAnNvt3+NeBC8o0cdaNPuqMsnvksesSBjxJ+XGx4393iGPatQA==", "zipcode"=>"6140", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 2147ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth" for 127.0.0.1 at 2019-09-27 00:49:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/home/herna/.rbenv/versions/2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/herna/.rbenv/versions/2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/herna/.rbenv/versions/2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered collection of /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (39.2ms)
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (60.9ms)
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.2ms)
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (215.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from __home_herna__rbenv_versions_______lib_ruby_gems_______gems_web_console_______lib_web_console_templates_console_js_erb__382050443468259786_70095689969020 at /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (144.8ms)
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendering /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.7ms)
+  Rendered /home/herna/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (258.1ms)
+Started GET "/search" for 127.0.0.1 at 2019-09-27 00:51:38 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth" for 127.0.0.1 at 2019-09-27 00:59:10 -0400
+Processing by SessionsController#create as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 923ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-27 00:59:11 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-27 00:59:27 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 00:59:43 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
