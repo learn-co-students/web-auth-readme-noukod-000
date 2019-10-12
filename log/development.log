@@ -1280,3 +1280,46 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-12 14:00:33 -0400
+
+SyntaxError (/home/ricardo/Desktop/moreJS/web-auth-readme-noukod-000/app/controllers/application_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+    foursquare_url = "https://foursquare.com/oauth2/auth...
+                      ^~~~~
+/home/ricardo/Desktop/moreJS/web-auth-readme-noukod-000/app/controllers/application_controller.rb:12: unknown regexp options - frqar
+/home/ricardo/Desktop/moreJS/web-auth-readme-noukod-000/app/controllers/application_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...m/oauth2/authenticate?client_id=#{client_id}&response_type=c...
+...                      ^~~~~~~~~):
+  app/controllers/application_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/controllers/application_controller.rb:12: unknown regexp options - frqar
+  app/controllers/application_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/controllers/searches_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ricardo/.ruby/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/ricardo/.ruby/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ricardo/.ruby/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.3ms)
+  Rendered /home/ricardo/.ruby/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+  Rendered /home/ricardo/.ruby/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ricardo/.ruby/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.ruby/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.ruby/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ricardo/.ruby/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.4ms)
+  Rendered /home/ricardo/.ruby/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.ruby/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.ruby/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-10-12 14:01:08 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-10-12 14:16:25 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
